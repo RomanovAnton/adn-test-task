@@ -1,0 +1,26 @@
+@import "../../../sass//variables";
+
+.hidden-navbar {
+  display: none;
+  width: 136px;
+  height: 24px;
+  align-items: center;
+  justify-content: space-between;
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  &__icon:hover {
+    fill: $color-orange;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hidden-navbar {
+    display: flex;
+  }
+}

@@ -1,3 +1,33 @@
 .header {
   width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 33px 0;
+
+  &__logo {
+    width: 182px;
+    height: 34px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .header__logo {
+    width: 130px;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .header__logo {
+    width: 182px;
+    height: 34px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .header__logo {
+    width: 106px;
+    height: 20px;
+  }
 }
