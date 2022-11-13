@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { setSort } from "../../../redux/filterSlice";
+import { setSort } from "../../../redux/filters/filterSlice";
 import "./StringList.scss";
 
 export const StringList = ({ data, toggleActive }) => {

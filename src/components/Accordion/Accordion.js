@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { ReactComponent as Arrow } from "../../assets/accordion-arrow-icon.svg";
 import { StringList } from "./StringList/StringList";
 import { CheckBoxList } from "./CheckBoxList/CheckBoxList";
+import { SmallSearch } from "../Search/SmallSearch/SmallSearch";
 import "./Accordion.scss";
 
 export const Accordion = ({ type, data, statTitle }) => {
@@ -34,6 +35,7 @@ export const Accordion = ({ type, data, statTitle }) => {
             : "accordion__content"
         }
       >
+        {statTitle === "Издатель" && <SmallSearch />}
         {type === "checkbox-items" && <CheckBoxList data={data} />}
 
         {type === "str-items" && (
