@@ -13,13 +13,11 @@ import "./App.scss";
 
 export const App = () => {
   const dispatch = useDispatch();
-  const { cards } = useSelector((state) => state.cards);
-
-  console.log(cards);
+  const { page } = useSelector((state) => state.filter);
 
   useEffect(() => {
-    dispatch(fetchCards());
-  }, []);
+    dispatch(fetchCards({ page }));
+  }, [page]);
 
   return (
     <div className="App">
@@ -27,10 +25,10 @@ export const App = () => {
       <div className="container">
         <Breadcrumb />
         <Title />
-        <div>
+        <section className="catalog">
           <FilterBar />
           <CardsList />
-        </div>
+        </section>
         <Description />
         <Banners />
         <Footer />

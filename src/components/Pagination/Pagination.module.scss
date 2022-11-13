@@ -1,0 +1,24 @@
+.root {
+  li {
+    display: inline-block;
+
+    a {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 100%;
+      margin-right: 16px;
+      cursor: pointer;
+      display: inline-block;
+      color: grey;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  .active {
+    color: white;
+  }
+}
