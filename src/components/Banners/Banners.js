@@ -7,7 +7,7 @@ import "./Banners.scss";
 
 export const Banners = () => {
   return (
-    <div className="banners">
+    <section className="banners">
       <div className="banners__item">
         <img src={orangeImg} alt="img" className="banners__image" />
         <p className="banners__text">Регулярные акции, скидки и бонусы</p>
@@ -30,6 +30,6 @@ export const Banners = () => {
           Мгновенное получение ключа на почту и в личный кабинет
         </p>
       </div>
-    </div>
+    </section>
   );
 };

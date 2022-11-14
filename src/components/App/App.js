@@ -5,7 +5,6 @@ import { FilterBar } from "../FilterBar/FilterBar";
 import { CardsList } from "../CardsList/CardsList";
 import { Breadcrumb } from "../Breadcrumb/Breadcrumb";
 import { Title } from "../Title/Title";
-import { Description } from "../Description/Description";
 import { Banners } from "../Banners/Banners.js";
 import { Footer } from "../Footer/Footer.js";
 import fetchCards from "../../redux/cards/asyncActions";
