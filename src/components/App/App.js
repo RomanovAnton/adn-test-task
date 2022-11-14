@@ -29,7 +29,6 @@ export const App = () => {
           <FilterBar />
           <CardsList />
         </section>
-        <Description />
         <Banners />
         <Footer />
       </div>

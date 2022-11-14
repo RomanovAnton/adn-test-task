@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { CardItem } from "../CardItem/CardItem";
 import { Pagination } from "../Pagination/Pagination";
+import { Description } from "../Description/Description";
 import "./CardsList.scss";
 
 export const CardsList = () => {
@@ -15,6 +16,7 @@ export const CardsList = () => {
         ))}
       </ul>
       <Pagination />
+      <Description/>
     </div>
   );
 };

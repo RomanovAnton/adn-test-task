@@ -1,0 +1,36 @@
+@import "../../sass/variables";
+
+.banners {
+  display: flex;
+  gap: 24px;
+  margin: 80px 0;
+
+  &__item {
+    box-sizing: border-box;
+    width: 276px;
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid $color-grey;
+    border-radius: 15px;
+  }
+
+  &__image {
+    margin-top: 26px;
+    width: 90px;
+    height: 90px;
+  }
+
+  &__text {
+    text-align: center;
+    width: 234px;
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+}

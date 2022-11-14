@@ -1,0 +1,36 @@
+.description {
+  width: 680px;
+  align-self: flex-start;
+  font-style: normal;
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 24px 0 0 0;
+  }
+
+  &__text:first-of-type {
+    margin-bottom: 32px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  &__link {
+    text-decoration: none;
+    cursor: pointer;
+    color: #2c80ff;
+  }
+}
