@@ -34,3 +34,11 @@
     color: $color-grey;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .slider {
+    &__value {
+      width: 127px;
+    }
+  }
+}

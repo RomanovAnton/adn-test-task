@@ -16,7 +16,7 @@ export const CardsList = () => {
         ))}
       </ul>
       <Pagination />
-      <Description/>
+      <Description />
     </div>
   );
 };

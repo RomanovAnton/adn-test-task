@@ -21,8 +21,10 @@ export const Footer = () => {
         </div>
       </div>
       <div className="footer__bottom">
-        <p className="footer__item_dark">© 2021 Turbinary</p>
-        <p className="footer__item_dark">Дизайн в ADN Digital Studio</p>
+        <p className="footer__item footer__item_dark">© 2021 Turbinary</p>
+        <p className="footer__item footer__item_dark">
+          Дизайн в ADN Digital Studio
+        </p>
       </div>
     </footer>
   );

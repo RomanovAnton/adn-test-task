@@ -1,5 +1,34 @@
+@import "../../sass/variables";
+
 .filter-bar {
   display: flex;
   flex-direction: column;
   width: 217px;
+}
+
+@media screen and (max-width: 1000px) {
+  .filter-bar {
+    display: none;
+
+    &_hidden {
+      position: relative;
+      width: 342px;
+      display: flex;
+      background-color: #262626;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      overflow-y: scroll;
+    }
+
+    &__header {
+      min-height: 94px;
+      background-color: $color-grey;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 6px;
+    }
+  }
 }

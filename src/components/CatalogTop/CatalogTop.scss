@@ -1,0 +1,68 @@
+@import "../../sass/variables";
+
+.catalog-top {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-self: flex-start;
+  font-style: normal;
+  font-weight: 700;
+
+  &__title {
+    position: relative;
+    font-size: 36px;
+    line-height: 130%;
+    margin: 0;
+  }
+
+  &__badge {
+    position: absolute;
+    top: 0;
+    left: 147px;
+    font-size: 16px;
+    line-height: 130%;
+    color: $color-orange;
+  }
+
+  &__btn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 100%;
+    border: 2px solid $color-white;
+    border-radius: 40px;
+    width: 239px;
+    height: 44px;
+    background-color: transparent;
+    color: $color-text;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .catalog-top {
+    &__btn {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .catalog-top {
+    &__btn {
+      width: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .catalog-top {
+    flex-direction: column;
+    &__btn {
+      width: 100%;
+      margin: 32px 0;
+    }
+  }
+}

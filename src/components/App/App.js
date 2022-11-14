@@ -4,7 +4,7 @@ import { Header } from "../Header/Header";
 import { FilterBar } from "../FilterBar/FilterBar";
 import { CardsList } from "../CardsList/CardsList";
 import { Breadcrumb } from "../Breadcrumb/Breadcrumb";
-import { Title } from "../Title/Title";
+import { CatalogTop } from "../CatalogTop/CatalogTop";
 import { Banners } from "../Banners/Banners.js";
 import { Footer } from "../Footer/Footer.js";
 import fetchCards from "../../redux/cards/asyncActions";
@@ -12,7 +12,7 @@ import "./App.scss";
 
 export const App = () => {
   const dispatch = useDispatch();
-  const { page } = useSelector((state) => state.filter);
+  const { page, hiddenMenuIsActive } = useSelector((state) => state.filter);
 
   useEffect(() => {
     dispatch(fetchCards({ page }));
@@ -23,13 +23,14 @@ export const App = () => {
       <Header />
       <div className="container">
         <Breadcrumb />
-        <Title />
+        <CatalogTop />
         <section className="catalog">
           <FilterBar />
           <CardsList />
         </section>
         <Banners />
         <Footer />
+        {hiddenMenuIsActive && <FilterBar type={'hidden'} />}
       </div>
     </div>
   );
