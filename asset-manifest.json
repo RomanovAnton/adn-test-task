@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ccf7e742.css",
+    "main.js": "/static/js/main.b1f7e692.js",
+    "static/media/main-logo.svg": "/static/media/main-logo.14b71f4c46018f84d31e75212a1860a1.svg",
+    "static/media/not-found-icon.svg": "/static/media/not-found-icon.02f96e8535c798079bb344d905c9387e.svg",
+    "static/media/cart-icon.svg": "/static/media/cart-icon.c96574b1baf663869e47ccdd2d0ff184.svg",
+    "static/media/search-icon.svg": "/static/media/search-icon.6bde8d680c90203542a67f834e9fef95.svg",
+    "static/media/like-icon.svg": "/static/media/like-icon.4dc1257a581b7ca4878918854eb85025.svg",
+    "static/media/profile-icon.svg": "/static/media/profile-icon.42e8b1779fcd36ca48b96e9454b42e92.svg",
+    "index.html": "/index.html",
+    "static/media/burger-icon.svg": "/static/media/burger-icon.bd538359114db69c83b5159df8eefbf0.svg",
+    "static/media/close-icon.svg": "/static/media/close-icon.1a06fdf41c96cbada1cb631f372bbc2d.svg",
+    "static/media/accordion-arrow-icon.svg": "/static/media/accordion-arrow-icon.dbd2731a5163b5b401a9b82e84bfb11a.svg",
+    "main.ccf7e742.css.map": "/static/css/main.ccf7e742.css.map",
+    "main.b1f7e692.js.map": "/static/js/main.b1f7e692.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ccf7e742.css",
+    "static/js/main.b1f7e692.js"
+  ]
+}
