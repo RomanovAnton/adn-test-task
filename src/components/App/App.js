@@ -32,7 +32,7 @@ export const App = () => {
         </section>
         <Banners />
         <Footer />
-        {hiddenMenuIsActive && <FilterBar type={"hidden"} />}
+        {hiddenMenuIsActive && <FilterBar />}
       </div>
     </div>
   );

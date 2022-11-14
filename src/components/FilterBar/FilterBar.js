@@ -34,6 +34,12 @@ export const FilterBar = () => {
       <Accordion type="checkbox-items" data={genres} statTitle="Издатель" />
       <Accordion type="checkbox-items" data={genres} statTitle="Особенности" />
       <Accordion type="checkbox-items" data={genres} statTitle="Тип товара" />
+      {hiddenMenuIsActive && (
+        <>
+          <button className="filter-bar__btn">ПРИМЕНИТЬ</button>
+          <p className="filter-bar__reset">Сбросить фильтр</p>
+        </>
+      )}
     </div>
   );
 };

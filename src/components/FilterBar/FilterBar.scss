@@ -30,5 +30,28 @@
       gap: 5px;
       padding: 6px;
     }
+
+    &__btn {
+      align-self: center;
+      width: 278px;
+      min-height: 41px;
+      background-color: $color-orange;
+      color: $color-text;
+      border-radius: 40px;
+      border: none;
+      margin: 24px 0;
+    }
+
+    &__reset {
+      align-self: center;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 100%;
+      margin: 0;
+      padding: 0;
+      color: #707070;
+      margin-bottom: 24px;
+    }
   }
 }
