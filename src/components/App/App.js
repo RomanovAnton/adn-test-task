@@ -12,11 +12,13 @@ import "./App.scss";
 
 export const App = () => {
   const dispatch = useDispatch();
-  const { page, hiddenMenuIsActive } = useSelector((state) => state.filter);
+  const { pageValue, searchValue, hiddenMenuIsActive } = useSelector(
+    (state) => state.filter
+  );
 
   useEffect(() => {
-    dispatch(fetchCards({ page }));
-  }, [page]);
+    dispatch(fetchCards({ pageValue, searchValue }));
+  }, [pageValue, searchValue]);
 
   return (
     <div className="App">
@@ -30,7 +32,7 @@ export const App = () => {
         </section>
         <Banners />
         <Footer />
-        {hiddenMenuIsActive && <FilterBar type={'hidden'} />}
+        {hiddenMenuIsActive && <FilterBar type={"hidden"} />}
       </div>
     </div>
   );

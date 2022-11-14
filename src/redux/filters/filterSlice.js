@@ -5,7 +5,8 @@ const filterSlice = createSlice({
   initialState: {
     sort: "По популярности",
     genre: [],
-    page: 1,
+    pageValue: 1,
+    searchValue: "",
     hiddenMenuIsActive: false,
   },
   reducers: {
@@ -13,7 +14,10 @@ const filterSlice = createSlice({
       state.sort = actions.payload;
     },
     setPage: (state, actions) => {
-      state.page = actions.payload;
+      state.pageValue = actions.payload;
+    },
+    setSearchValue: (state, actions) => {
+      state.searchValue = actions.payload;
     },
     toggleHiddenMenu: (state) => {
       state.hiddenMenuIsActive = !state.hiddenMenuIsActive;
@@ -21,5 +25,6 @@ const filterSlice = createSlice({
   },
 });
 
-export const { setSort, setPage, toggleHiddenMenu } = filterSlice.actions;
+export const { setSort, setPage, toggleHiddenMenu, setSearchValue } =
+  filterSlice.actions;
 export default filterSlice.reducer;

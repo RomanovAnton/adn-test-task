@@ -6,7 +6,6 @@ import styles from "./Pagination.module.scss";
 
 export const Pagination = () => {
   const dispatch = useDispatch();
-
   const handlePageClick = (e) => {
     dispatch(setPage(e.selected + 1));
   };
